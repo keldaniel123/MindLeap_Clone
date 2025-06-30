@@ -35,7 +35,7 @@ const Hero = () => {
         whileInView={'show'}
         viewport={{once: false, amount: 0.7}}
         className="md:w-1/2 h-auto">
-          <img src={heroImg} alt="heroImage" className='md:w-96 lg:w-4/5 xl:w-full object-cover' />
+          <img src={heroImg} alt="heroImage" className='md:w-3/5 object-contain' />
         </motion.div>
       </div>
     </section>
