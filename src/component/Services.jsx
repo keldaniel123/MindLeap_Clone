@@ -5,21 +5,11 @@ import serviceImg2 from "../assets/service2.webp";
 import serviceImg3 from "../assets/service3.webp";
 import serviceImg4 from "../assets/service4.webp";
 
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
-import { fadeIn } from "./Utility/AnimationVariants";
-
 const Services = () => {
   return (
     <div id="services" className="bg-[#f7f8fc]">
       <div className="pt-28 container mx-auto">
-        <motion.div
-          variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-center space-y-5"
-        >
+        <div className="text-center space-y-5">
           <h2 className="text-4xl font-bold font-secondary text-heroBg pb-6">
             What Can We Do Together
           </h2>
@@ -29,34 +19,23 @@ const Services = () => {
             quibusdam obcaecati. Labore facilis blanditiis dicta corrupti quidem
             repellat hic possimus.
           </p>
-        </motion.div>
+        </div>
 
         {/* Service-Categories */}
         <div className="py-12 md:w-4/5 mx-auto px-8">
           <Tabs>
-            <motion.div
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-            >
+            <div>
               <TabList className="flex flex-wrap justify-between items-center md:gap-8 md:justify-center gap-4 ">
                 <Tab>Couple Counseling</Tab>
                 <Tab>Parenting Skills</Tab>
                 <Tab>Feeling Stuck</Tab>
                 <Tab>Self-Confidence</Tab>
               </TabList>
-            </motion.div>
+            </div>
 
             {/* Couple counselling */}
             <TabPanel>
-              <motion.div
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="flex flex-col md:flex-row gap-8 mt-8"
-              >
+              <div className="flex flex-col md:flex-row gap-8 mt-8">
                 {/* Left Hand Side */}
                 <div className="md:w-1/2 bg-white rounded-lg p-12 font-secondary">
                   <h3 className="text-3xl font-semibold text-primary mb-4">
@@ -85,18 +64,12 @@ const Services = () => {
                     className="w-full h-full rounded-2xl object-cover "
                   />
                 </div>
-              </motion.div>
+              </div>
             </TabPanel>
 
             {/* Parenting Skills */}
             <TabPanel>
-              <motion.div
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="flex flex-col md:flex-row gap-8 mt-8"
-              >
+              <div className="flex flex-col md:flex-row gap-8 mt-8">
                 {/* Left Hand Side */}
                 <div className="md:w-1/2 bg-white rounded-lg p-12 font-secondary">
                   <h3 className="text-3xl font-semibold text-primary mb-4">
@@ -125,18 +98,12 @@ const Services = () => {
                     className="w-full h-full rounded-2xl object-cover"
                   />
                 </div>
-              </motion.div>
+              </div>
             </TabPanel>
 
             {/* Feeling Stuck*/}
             <TabPanel>
-              <motion.div
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="flex flex-col md:flex-row gap-8 mt-8"
-              >
+              <div className="flex flex-col md:flex-row gap-8 mt-8">
                 {/* Left Hand Side */}
                 <div className="md:w-1/2 bg-white rounded-lg p-12 font-secondary">
                   <h3 className="text-3xl font-semibold text-primary mb-4">
@@ -165,18 +132,12 @@ const Services = () => {
                     className="w-full h-full rounded-2xl object-cover"
                   />
                 </div>
-              </motion.div>
+              </div>
             </TabPanel>
 
             {/* Self Confidence */}
             <TabPanel>
-              <motion.div
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="flex flex-col md:flex-row gap-8 mt-8"
-              >
+              <div className="flex flex-col md:flex-row gap-8 mt-8">
                 {/* Left Hand Side */}
                 <div className="md:w-1/2 bg-white rounded-lg p-12 font-secondary">
                   <h3 className="text-3xl font-semibold text-primary mb-4">
@@ -205,7 +166,7 @@ const Services = () => {
                     className="w-full rounded-2xl object-cover h-full"
                   />
                 </div>
-              </motion.div>
+              </div>
             </TabPanel>
           </Tabs>
         </div>

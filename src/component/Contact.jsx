@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaGlobe, FaPhoneAlt, FaUser } from "react-icons/fa";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { fadeIn } from "./Utility/AnimationVariants";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -43,13 +40,7 @@ function Contact() {
       className="bg-heroBg flex items-center text-white justify-center py-28 px-8"
       id="contact"
     >
-      <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto"
-      >
+      <div className="container mx-auto">
         <div className="md:w-4/5 mx-auto grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 item-center md:gap-12">
           {/* left side */}
           <div className="space-y-8">
@@ -163,7 +154,7 @@ function Contact() {
             </form>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90">

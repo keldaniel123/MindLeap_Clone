@@ -1,7 +1,4 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import {motion} from 'framer-motion'
-import { fadeIn } from './Utility/AnimationVariants';
 
 const packages = [
   {
@@ -53,13 +50,7 @@ const Pricing = () => {
   };
   return (
     <div id="pricing" className="bg-[#f7f8fc] pt-32">
-      <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto px-8"
-      >
+      <div className="container mx-auto px-8">
         {/* Heading---Text */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-secondary mb-3">
@@ -108,7 +99,7 @@ const Pricing = () => {
             ))
           }
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

@@ -11,20 +11,11 @@ import {
 } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
 
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { fadeIn } from "./Utility/AnimationVariants";
-
 
 const Footer = () => {
   return (
     <div className="py-12 bg-grey-100">
-      <motion.div
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8"
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8"
       >
         <div className="px-8 space-y-6">
           <div className="flex items-center space-x-2">
@@ -139,7 +130,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

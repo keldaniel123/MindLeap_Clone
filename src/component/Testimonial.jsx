@@ -2,9 +2,6 @@ import React from "react";
 import { IoIosChatbubbles } from "react-icons/io";
 import review1 from "../assets/review1.webp";
 import review2 from "../assets/review2.webp";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { fadeIn } from "./Utility/AnimationVariants";
 
 // testimonial Data
 const testimonials = [
@@ -27,13 +24,7 @@ const testimonials = [
 const Testimonial = () => {
   return (
     <div id="testimonial" className="bg-[#f7f8fc] py-12 px-8 pt-32">
-      <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto pb-20"
-      >
+      <div className="container mx-auto pb-20">
         {/* Heading---Text */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-secondary mb-3">
@@ -73,7 +64,7 @@ const Testimonial = () => {
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

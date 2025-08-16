@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import thumbnailImg from "../assets/video-thumbnail.webp";
 import { FaPlay } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-import { fadeIn } from "./Utility/AnimationVariants";
+
 
 const About = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -18,13 +16,7 @@ const About = () => {
   };
   return (
     <div id="about" className="bg-[#f7f8fc] pb-16 pt-16">
-      <motion.div
-        variants={fadeIn("down", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="container mx-auto "
-      >
+      <div className="container mx-auto ">
         {/* Video Page */}
         <div className="py-12 px-8 md:w-4/5 mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* left---side */}
@@ -89,7 +81,7 @@ const About = () => {
             </div>
           </div>
         )}
-      </motion.div>
+      </div>
     </div>
   );
 };
